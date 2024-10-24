@@ -18,5 +18,5 @@ jobs:
         run: |
           postman collection run "30057603-78b4f517-8af1-43a5-be28-210e1f1ccc04"
 
-      - name: postman logout
-        run: ${{ secrets.POSTMAN_API_KEY }}
+      - name: logout
+        run: postman logout ${{ secrets.POSTMAN_API_KEY }}
